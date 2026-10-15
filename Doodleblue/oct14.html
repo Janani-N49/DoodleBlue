@@ -1,0 +1,76 @@
+<pre>
+    <p> IF CONDITION/TERNARY OPERATOR</p>
+    let age=18;
+    let msg=age>=18?"Eligible to vote":"Not eligible to vote";
+    console.log(msg);
+</pre>
+
+<pre>
+    <p> FOR LOOP</p>
+    for (let i=1;i<=5;i++){
+        console.log(i);
+    }
+</pre>
+
+<pre>
+    <p> BREAK AND CONTINUE</p>
+    for(let i=1;i<=5;i++){
+        if(i==3){
+            continue;
+        }
+        if(i==5){
+            break;
+        }
+        console.log(i);
+    }
+</pre>
+
+<pre>
+    <P> CALL BACK</P>
+    function display(callback){
+        console.log("Hello");
+        callback();
+    }
+    function message(){
+        console.log("Welcome");
+    }
+    display(message)
+</pre>
+
+<pre>
+    <p>PUSH AND POP</p>
+    const students=["Deva","Arun","Divya","Rahul","sneha"];
+    console.log(students[0], students[4] );
+    students.push("dp");
+    console.log(students);
+    students.pop(students[0,4]);
+    console.log(students);
+</pre>
+
+<pre>
+
+    <p>SPLICE</p>
+    const numbers=[1,2,3,4,5];
+    numbers.splice(1,2);
+    console.log(numbers);
+
+    console.log(numbers.includes(1));
+</pre>
+
+<pre>
+
+    <p>FILTER, MAP, REDUCE</p>
+
+    const products = [
+    { name: "Laptop", price: 1000 },
+    { name: "Phone", price: 500 },
+    { name: "Tablet", price: 800 },
+    { name: "Headphones", price: 1200 },
+    { name: "Smartwatch", price: 13000 }
+    ];
+
+    console.log(products.filter(product => product.price > 1000));
+    console.log( products.map(product => product.name));
+    console.log(products.reduce((sum, product) => sum + product.price, 0));
+
+</pre>

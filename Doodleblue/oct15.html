@@ -1,0 +1,166 @@
+<pre>
+    <p>SORTING</p>
+
+    let strong=[40,10,5,20,30]
+    let res=strong.sort((a,b)=>a-b) 
+    console.log(res);
+</pre>
+
+<pre>
+
+    <p>REDUCE</p>
+
+    let number=[10,20,30,40]
+    let res1=number.reduce((total,sum)=>total+sum,0)
+    console.log(res1);
+</pre>
+
+<pre>
+
+    <p>SLICE AND SPLICE</p>
+    let numbers=[10,20,30,40,50]
+    let a=numbers.slice(1,3)
+    let b=numbers.splice(2,1)
+    console.log(a)
+    console.log(b)
+</pre>
+
+<pre>
+    <p>SOME</p>
+    let num=[10,20,15,5]
+    let result=num.some((n)=>{return n>20})
+    console.log(result)
+</pre>
+
+<pre>
+    <p>EVERY</p>
+
+    let num1=[10,20,15,5]
+    let res=num1.every((n)=>{return n>5})
+    console.log(res)
+</pre>
+
+<pre>
+    <p> OBJECTS</p>
+    const employee ={
+        name: "Arun",
+        salary: 30000
+    };
+    console.log(employee.name);
+    console.log(employee["salary"]);
+
+    employee.salary=35000;
+    console.log(employee.salary);
+
+    employee.city="chennai";
+    delete employee.city;
+    console.log(employee);
+</pre>
+
+<pre>
+    <p> NESTED OBJECTS</p>
+
+    const student={
+        name:"priya",
+        address:{
+            city:"chennai",
+            state:"Tamil nadu"
+        }
+    };
+
+    console.log(student.name);
+    console.log(student.address.city);
+    console.log(student.address.state);
+</pre>
+
+<pre>
+    <p> OBJECT DESTRUCTURING</p>
+
+    const student={
+        name:"priya",
+        age:21,
+        course:"React"
+    };
+    const{name,age,course}=student;
+    console.log(name);
+    console.log(age);
+    console.log(course);
+</pre>
+
+<pre>
+
+    <p> DESTRUCTURING: RENAME AND DEFAULT</p>
+    const user={
+        name:"priya"
+    };
+
+    const{
+        name:studentName,
+        city="chennai"
+    }=user;
+
+    console.log(studentName);
+    console.log(city);
+</pre>
+
+<pre>
+    <p>SPREAD OPERATOR WITH OBJECTS</p>
+    const original={
+        name:"priya",
+        age:21
+    };
+
+    const updated={
+        ...original,
+        age:22,
+        city:"chennai"
+    };
+    console.log(original);
+    console.log(updated);
+</pre>
+
+<pre>
+    <p> TEMPLATE LITERALS</p>
+    const name="priya";
+    const age=21;
+
+    const msg="My name is ${name} and I am ${age} years old.";
+    console.log(msg);
+
+    const price=500;
+    const message=`The price is ${price} dollars.`;
+    console.log(message);
+</pre>
+
+<pre>
+    <p>SPREAD WITH ARRAY</p>
+    const first={1,2,3};
+    const sec={4,5,6};
+    const combined={...first, ...sec};
+    const copy={...first};
+    console.log(combined);
+    console.log(copy);
+</pre>
+
+<pre>
+    <P> OPTIONAL CHAINING</P>
+    const user={
+        name:"priya",
+        address:{
+            city:"chennai"
+        }
+    };
+    console.log(user.address?.city);
+    console.log(user.contact?.phone);
+    console.log(user.company?.name);
+</pre>
+
+<pre>
+    <p> NULLISH COALESCING</p>
+    const user=null;
+    const age=0;
+    const city=undefined;
+    console.log(user??"Guest");
+    console.log(age??18);
+    console.log(city??"Unknown");
+</pre>
