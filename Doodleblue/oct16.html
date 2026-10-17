@@ -1,0 +1,119 @@
+<pre>
+    <p> HOISTING</p>
+    var a;
+    console.log(a);
+    a=10;
+</pre>
+
+<pre>
+    <p> UNDEFINED IN HOISTING</p>
+    console.log(a);
+    var a=10;
+</pre>
+
+<pre>
+    <p>UNDEFINED IN HOISTING</p>
+    let a;
+    console.log(a);
+    a=10;
+</pre>
+
+<pre>
+    <p> TEMPORAL DEAD ZONE(TDZ)</p>
+    const b;
+    console.log(b);
+    b=20;
+</pre>
+
+<pre>
+    <p> FUCNTION</p>
+    greet()
+    function greet(){
+        console.log("welcome")
+    }
+</pre>
+
+<pre>
+    <p>CLOSURE</p>
+    function account(){
+        let balance=1000;
+        function deposit(amount){
+            balance=balance+amount
+            console.log("balance amount: "+ balance);
+        }
+        return deposit;
+    }
+    const myacc=account();
+    myacc(500);
+    myacc(700);
+</pre>
+
+<pre>
+    <p>DOUBLE CLICK SETTER</p>
+    const target= document.querySelector("#target");
+    target.addEventListener("dblclick",()=>{
+        target.textContent="You double-clicked the box!";
+        target.style.background="#bbf7d0"
+    });
+</pre>
+
+<pre>
+    <p>MOUSEOVER AND MOUSEOUT</p>
+    <script>
+        const target= document.querySelector("#target");
+        const result= document.querySelector("#result");
+
+        target.addEventListener("mouseover", ()=>{
+            target.style.backgroundColor="#fed7aa";
+            result.textContent="mouseover fired";
+        });
+
+        target.addEventListener("mouseout", ()=>{
+            target.style.backgroundColor="#dbeafe";
+            result.textContent="mouseout fired";
+        });
+    </script>
+</pre>
+
+<pre>
+    <p>RIGHT CLICK METHOD</p>
+    <script>
+        const target= document.querySelector("#target");
+        const output= document.querySelector("#output");
+
+        target.addEventListener("contextmenu",(event)=>{
+            event.preventDefault();
+            output.textContent="Custom right-click action";
+            target.style.backgroundColor="#e9d5ff";
+        });
+    </script>
+</pre>
+
+<pre>
+    <p>SYNCHRONOUS</p>
+    console.log("a");
+    console.log("b");
+    console.log("c");
+</pre>
+
+<pre>
+    <p>SYNCHRONOUS</p>
+    console.log("start");
+    SetTimeOut(function(){
+        console.log("set ready")
+    }2000);
+    console.log("end");
+</pre>
+
+<pre>
+    <p>PROMISE</p>
+    const myPromise=new promise(function(resolve,reject){
+        let paysuccess=True
+        if(paysuccess){
+            resolve("Payment Success");
+        }else{
+            reject("Payment failed");
+        }
+    });
+    mypromise.then
+</pre>

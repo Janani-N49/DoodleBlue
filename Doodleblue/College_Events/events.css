@@ -1,0 +1,185 @@
+.event-top-section {
+    max-width: 1400px;
+    min-height: 450px;
+    margin: auto;
+    padding: 30px;
+}
+
+.event-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+    margin-bottom: 22px;
+}
+
+.event-top h1 {
+    margin-bottom: 5px;
+    font-size: 35px;
+}
+
+.event-top p {
+    color: #5b667b;
+    font-size: 15px;
+}
+
+
+.search-box {
+    width: 260px;
+    min-height: 38px;
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    border: 1px solid #dce3ee;
+    border-radius: 5px;
+    color: #667187;
+}
+
+.search-box input {
+    width: 100%;
+    min-width: 0;
+
+    border: none;
+    outline: none;
+
+    font-size: 13px;
+    color: #101b3d;
+}
+
+
+.event-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.events {
+    min-width: 0;
+    overflow: hidden;
+
+    background: #ffffff;
+    border: 1px solid #e4eaf3;
+    border-radius: 7px;
+
+    box-shadow: 0 3px 12px rgba(24, 44, 80, 0.06);
+}
+
+.events > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-content {
+    padding: 12px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 3px 7px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.technical {
+    background: #e6efff;
+    color: #1261d8;
+}
+
+.cultural {
+    background: #ffe8ef;
+    color: #c6295d;
+}
+
+.sports {
+    background: #e0f7e9;
+    color: #11804b;
+}
+
+.workshop {
+    background: #fff0d1;
+    color: #98600b;
+}
+
+.event-content h2 {
+    margin: 7px 0;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.event-info {
+    margin: 4px 0;
+    color: #667187;
+    font-size: 15px;
+}
+
+.event-info i {
+    margin-right: 4px;
+}
+
+.description {
+    margin-top: 8px;
+    color: #58657b;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+
+    border-radius: 4px;
+    background: #1261d8;
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #084db6;
+}
+
+
+@media (max-width: 800px) {
+
+    .event-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .event-top-section {
+        padding: 24px 18px;
+    }
+}
+
+@media (max-width: 560px) {
+
+
+    .event-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .event-top h1 {
+        font-size: 26px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .event-list {
+        grid-template-columns: 1fr;
+    }
+
+    .events > img {
+        height: 180px;
+    }
+}

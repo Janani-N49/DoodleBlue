@@ -1,0 +1,165 @@
+.title-section {
+    max-width: 1400px;
+    min-height: 450px;
+    margin: auto;
+    padding: 24px 30px 35px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    margin-bottom: 12px;
+    color: #1261d8;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.event-details {
+    margin-bottom: 15px;
+}
+
+.event-details h1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 5px;
+    font-size: 35px;
+}
+
+.event-details p {
+    color: #5b667b;
+    font-size: 15px;
+}
+
+
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+
+    border-radius: 12px;
+    background: #e6efff;
+    color: #1261d8;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.details {
+    display: grid;
+    grid-template-columns: minmax(0, 1.7fr) minmax(250px, 0.9fr);
+    align-items: start;
+    gap: 22px;
+}
+
+.details-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+.about-event {
+    padding-top: 14px;
+}
+
+.about-event h2 {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.about-event p {
+    margin-bottom: 9px;
+    color: #58657b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+.event-information {
+    padding: 16px;
+    background: #f0f6ff;
+    border-radius: 6px;
+}
+
+.event-information h2 {
+    margin-bottom: 12px;
+    font-size: 45px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 14px 0;
+}
+
+.info-item > i {
+    width: 18px;
+    margin-top: 1px;
+
+    color: #1261d8;
+    font-size: 20px;
+}
+
+.info-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.info-item strong {
+    font-size: 15px;
+}
+
+.info-item span {
+    color: #58657b;
+    font-size: 14px;
+}
+
+
+.register-button {
+    display: block;
+    margin-top: 12px;
+    padding: 10px;
+
+    border-radius: 4px;
+    background: #1261d8;
+    color: #ffffff;
+
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.register-button:hover {
+    background: #084db6;
+}
+
+
+@media (max-width: 800px) {
+
+    .details {
+        grid-template-columns: 1fr;
+    }
+
+    .details-image {
+        height: 220px;
+    }
+
+    .title-section {
+        padding: 24px 18px;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .event-details h1 {
+        font-size: 35px;
+    }
+}

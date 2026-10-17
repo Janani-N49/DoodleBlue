@@ -1,0 +1,210 @@
+.about-top-sec {
+    min-height: 400px;
+    padding: 30px 5%;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.97),
+            rgba(255, 255, 255, 0)
+        ),
+        url("college.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.about-top {
+    max-width: 500px;
+}
+
+.about-top h1 {
+    margin-bottom: 7px;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.title-underline {
+    display: block;
+    width: 70px;
+    height: 3px;
+
+    margin-bottom: 12px;
+
+    border-radius: 3px;
+    background: #1261d8;
+}
+
+.about-top p {
+    color: #4e5b72;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+.subtop {
+    max-width: 1400px;
+    margin: auto;
+    padding: 22px 30px;
+}
+
+.subtop h2 {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+
+
+.mission-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.missions {
+    min-height: 150px;
+    padding: 30px;
+
+    border-radius: 6px;
+    text-align: center;
+}
+
+.missions > i {
+    display: block;
+    margin-bottom: 3px;
+
+    color: #1261d8;
+    font-size: 60px;
+}
+
+.missions h3 {
+    margin-bottom: 4px;
+    font-size: 15px;
+}
+
+.missions p {
+    max-width: 230px;
+    margin: auto;
+
+    color: #4e5b72;
+    font-size: 13px;
+}
+
+.mission-blue {
+    background: #eaf2ff;
+}
+
+.mission-lightblue {
+    background: #e8f2ff;
+}
+
+.mission-green {
+    background: #e5f8ed;
+}
+
+.mission-green > i {
+    color: #15975a;
+}
+
+
+.event-types {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 13px;
+}
+
+.types {
+    min-height: 140px;
+    padding: 20px 15px;
+
+    border-radius: 6px;
+    text-align: center;
+}
+
+.types > i {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 30px;
+}
+
+.types h3 {
+    margin-bottom: 3px;
+    font-size: 15px;
+}
+
+.types p {
+    color: #4e5b72;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.type-blue {
+    background: #e9f2ff;
+}
+
+.type-blue > i {
+    color: #1261d8;
+}
+
+.type-pink {
+    background: #ffedf1;
+}
+
+.type-pink > i {
+    color: #e63970;
+}
+
+.type-green {
+    background: #e4f8ee;
+}
+
+.type-green > i {
+    color: #15975a;
+}
+
+.type-yellow {
+    background: #fff5df;
+}
+
+.type-yellow > i {
+    color: #bc790d;
+}
+
+
+@media (max-width: 800px) {
+
+    .mission-list {
+        gap: 10px;
+    }
+
+    .event-types {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+
+    .about-top-sec {
+        min-height: 210px;
+        padding: 25px 20px;
+    }
+
+    .about-top h1 {
+        font-size: 26px;
+    }
+
+    .subtop {
+        padding: 18px;
+    }
+
+    .mission-list {
+        grid-template-columns: 1fr;
+    }
+
+    .event-types {
+        gap: 10px;
+    }
+}

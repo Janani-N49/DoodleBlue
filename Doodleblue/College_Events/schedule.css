@@ -1,0 +1,106 @@
+.top-sec {
+    max-width: 1400px;
+    min-height: 450px;
+    margin: auto;
+    padding: 30px;
+}
+
+.top {
+    margin-bottom: 22px;
+}
+
+.top h1 {
+    margin-bottom: 5px;
+    font-size: 35px;
+}
+
+.top p {
+    color: #5b667b;
+    font-size: 15px;
+}
+
+
+.table-outer {
+    width: 100%;
+    overflow-x: auto;
+
+    border: 1px solid #e0e7f1;
+    border-radius: 5px;
+
+    box-shadow: 0 3px 12px rgba(24, 44, 80, 0.04);
+}
+
+
+.table-inner {
+    width: 100%;
+    min-width: 720px;
+
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table-inner thead {
+    background: #1261d8;
+    color: #ffffff;
+}
+
+.table-inner th {
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.table-inner td {
+    padding: 12px;
+
+    border-bottom: 1px solid #e8edf5;
+
+    color: #46536a;
+    font-size: 13px;
+}
+
+.table-inner tbody tr:nth-child(even) {
+    background: #f7f9fd;
+}
+
+.table-inner tbody tr:hover {
+    background: #edf4ff;
+}
+
+.table-inner tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+.table-button {
+    display: inline-block;
+    padding: 4px 10px;
+
+    border: 1px solid #1261d8;
+    border-radius: 4px;
+
+    color: #1261d8;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.table-button:hover {
+    background: #1261d8;
+    color: #ffffff;
+}
+
+
+@media (max-width: 800px) {
+
+    .top-sec {
+        padding: 24px 18px;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .top h1 {
+        font-size: 26px;
+    }
+}
