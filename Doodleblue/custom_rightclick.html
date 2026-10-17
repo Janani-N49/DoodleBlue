@@ -1,0 +1,96 @@
+<DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <title>HTML full form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <form action="/preferences" method="post">
+                <label for="fulName"> Full Name</label>
+                <input type="text" id="target" name="fullName" minlength="2" maxlength="6" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Enter a 10-digit phone number" required>
+                <label for="DOB">Date of Birth</label>
+                <input type="date" id="DOB" name="DOB" required>
+                <label for="course">Preferred Course</label>
+                <select id="course" name="course" required>
+                    <option value="">Choose a course</option>
+                    <option value="html"> HTML &amp; CSS</option>
+                    <option value="js">JavaScript</option>
+                    <option value="frontend">Frontend Development</option>
+                </select>
+                <label for="bio">About You</label>
+                <textarea id="bio" name="bio" rows="4" maxlength="300"
+                placeholder="Tell us about yourself"></textarea>
+                <label for="resume">Resume (PDF)</label>
+                <input type="file" id="resume" name=resume accept=".pdf,application/pdf">
+                <fieldset>
+                    <legend>Terms and Conditions</legend>
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" value="accepted" required>
+                        I agree to the terms and conditions
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Select your skills</legend>
+                    <label for="skill-html">
+                        <input type="checkbox" id="skill-html" name="skills" value="html">
+                        HTML
+                    </label>
+                    <label for="skill-css">
+                        <input type="checkbox" id="skill-css" name="skills" value="css">
+                        CSS
+                    </label>
+
+                    <label for="skill-js">
+                        <input type="checkbox" id="skill-js" name="skills" value="js">
+                        JavaScript
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Experience Level</legend>
+                    <label for="level-beginner">
+                        <input type="radio" id="level-beginner" name="level" value="beginner" required>
+                        Beginner
+                    </label>
+
+                    <label for="level-intermediate">
+                        <input type="radio" id="level-intermediate" name="level" value="intermediate" required>
+                        Intermediate
+                    </label>
+
+                    <label for="level-advanced">
+                        <input type="radio" id="level-advanced" name="level" value="advanced" required>
+                        Advanced
+                    </label>
+                </fieldset>
+
+                <button type="submit">Create Account</button>
+
+                <button type="reset">Clear Form</button>
+
+                <script>
+                    const target= document.querySelector("#target");
+                    const output= document.querySelector("#output");
+
+                    target.addEventListener("contextmenu",(event)=>{
+                        event.preventDefault();
+                        output.textContent="Custom right-click action";
+                        target.style.backgroundColor="#e9d5ff";
+                    });
+                </script>
+
+            </form>
+        </main>
+    </body>
+</html>
